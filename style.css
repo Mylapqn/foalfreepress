@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Montserrat',Helvetica,Verdana,sans-serif;
+}
+.article{
+    width:60vw;
+    border-radius:50px;
+    background: rgb(126,48,255);
+    background: linear-gradient(45deg, rgba(126,48,255,1) 0%, rgba(57,255,210,1) 100%);
+    margin-top:20px;
+    margin-bottom:20px;
+    color:white;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    height:500px;
+}
+.article h1{
+}
+#mainFeed{
+    padding-top:80px;
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.article .image {
+    height:100%;
+    width:40%;
+    margin:0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+}
+.article .content{
+    padding:50px 50px 50px 50px;
+    width:60%;
+}
+.showMore{
+    padding:10px 20px 10px 20px;
+    border-radius: 50px;
+    background:white;
+    color:rgb(98, 127, 206);
+    font-family:inherit;
+    font-weight: bold;
+    border:5px solid transparent;
+    background-clip: padding-box;
+    display:block;
+    margin-top:20px;
+    transition:border .2s;
+    cursor: pointer;
+}
+.showMore:hover{
+    border:5px solid white;
+}
+.showMore:focus{
+    outline: 0;
+}
+.details{
+    
+    
+    border-left:2px solid white;
+    padding:10px 20px 10px 20px;
+    margin:20px 0 20px 0;
+
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgb(98, 127, 206);
+    z-index:1;
+    color:white;
+    padding-left:20px;
+    background: linear-gradient(45deg, rgba(126,48,255,1) 0%, rgba(57,255,210,1) 100%);
+    cursor: default;
+}
+nav h1{
+    display:inline-block;
+    margin-right:20px;
+}
+nav >div{
+    display:inline-block;
+    margin-left:20px;
+    margin-right:20px;
+    height:40px;
+    transition:border .2s;
+    border-bottom:5px solid transparent;
+    cursor: pointer;
+}
+nav>div:hover{
+    border-bottom:5px solid white;
+}
+nav .selected {
+    border-bottom:5px solid white;
+}
